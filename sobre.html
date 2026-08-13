@@ -1,26 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btnav {
+            border-radius: 10%;
+            margin-right: 10px;
+            height: 30px;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        .btnav:hover {
+            background-color: rgb(221, 192, 255);
+            color: aliceblue;
+        }
+
+        .btfooter {
+            margin-left: 10px;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(239, 227, 250);
+            color: black;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .btfooter:hover {
+            background-color: rgb(221, 192, 255);
+            color: rgb(255, 255, 255);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            border: 1px rgb(197, 227, 255) solid;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        @media(max-width: 750px) {
+            button {
+                width: 50px !important;
+                height: 30px !important;
+            }
+
+        }
+    </style>
+
 </head>
+
 <body>
+
+    >
+
+
     <header
         style="background-color: rgb(255, 172, 255); height: 10vh; display: flex; align-items: center; justify-content: center;">
-        <!-- Cabeçalho da página -->
+
 
         <nav style="display: flex;align-items: center;">
-            <img src="https://upload.wikimedia.org/wikipedia/pt/4/4f/Winx_Club_Logo.png" alt=""
-             height="80px" width="px">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/4/4f/Winx_Club_Logo.png" alt="" height="80px"
+                width="px">
             <a href="index.html"><button class="btnav">Pagina inicial</button></a>
             <a href="./sobre.html"><button class="btnav">Sobre Nós</button></a>
             <a href="trabalho.html"><button class="btnav">Trabalhe conosco</button> </a>
         </nav>
 
     </header>
-    
+
+    <main style="background-color: rgb(255, 172, 255); height: 70vh;">
+
+
+        <section style="background-color: rgb(197, 227, 255); height: 40%;
+display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+            <h1 style="color: white; align-items: center;">
+                Nossas fadas auxiliares - Bloom, Stella, Flora, Musa, Tecna e Aisha </h1>
+            <br>
+            <p style="color: white;"> A Escola de Alfea é uma das principais escolas de magia do universo de Winx Club.
+                Localizada em Magix, na Dimensão Mágica, ela é destinada principalmente ao treinamento de jovens fadas.
+                Na escola, as alunas aprendem a controlar seus poderes, preparar poções, realizar encantamentos e
+                desenvolver suas habilidades mágicas.
+
+                A diretora de Alfea é Faragonda, uma fada muito poderosa e experiente que orienta as estudantes durante
+                sua formação. Entre as alunas mais famosas estão Bloom, Stella, Flora, Musa, Tecna e Aisha, que formam o
+                Clube das Winx.
+
+                Além das aulas de magia, Alfea é um lugar onde as fadas fazem amizades, enfrentam desafios e aprendem
+                valores como coragem, união e responsabilidade. A escola possui dormitórios, salas de aula, biblioteca,
+                jardins e espaços para treinamento. Por isso, Alfea é muito mais do que uma escola de magia: é um lugar
+                onde as jovens fadas crescem, descobrem quem são e aprendem a usar seus poderes para ajudar os outros.
+            </p>
+
+        </section>
+
+
+        <section style="background-color: rgb(22, 87, 148); height: 60%; display: flex;">
+
+            <div style="width: 50%; height: 100%; background-color: rgb(174, 210, 245); ">
+
+                <div class="card">
+                    <h4> LOCALIZAÇÃO ALFEA</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.5249403786584!2d10.7498004!3d47.557573999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479cf7cac44ea35d%3A0xc8a6866bd39dbba3!2sCastelo%20de%20Neuschwanstein!5e0!3m2!1spt-BR!2sbr!4v1786648328263!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <p> ESCOLA DE ALFEA </p>
+                </div>
+
+            </div>
+
+            <div style="width: 50%; height: 100%; background-color: rgb(174, 210, 245);;">
+                <div class="card" style="border: 1px solid  rgb(174, 210, 245);;">
+                    <h4> FADAS DE ALFEA, Nossas auxiliares </h4>
+                    <img class=" imgsection"
+                        src="https://madcave-storage.s3.amazonaws.com/wp-content/uploads/sites/3/2025/06/25205339/Winx-Club-Icon-Series.jpg"
+                        alt="" height="80%" width="40%">
+                    <p> </p>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer
+        style="background-color: rgb(255, 172, 255); height: 20vh; display: flex; align-items: center; justify-content: center;">
+
+        <nav style="display: flex; justify-content: center; align-items: center;">
+            <a href=""> <button class="btfooter">
+                    <img src="https://img.icons8.com/?size=48&id=32323&format=png" alt="">Instagram
+                </button></a>
+
+            <a href=""> <button class="btfooter">
+                    <img src="https://img.icons8.com/?size=48&id=118640&format=png" alt=""> TikTok
+                </button></a>
+
+            <a href=""> <button class="btfooter">
+                    <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" alt="">X
+                </button></a>
+
+        </nav>
+
+    </footer>
+
 </body>
+
 </html>

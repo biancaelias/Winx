@@ -49,14 +49,7 @@
             align-items: center;
             justify-content: center;
         }
-        /* o @media serve para alterar as propriedades das tags com base no tamanho do dispositivo
-        para garantir a responsividade do site, temos que verificar como fic a estilização em varios
-        tamanhos de telas diferntes, pode ser no  computador fique ok, porem quando acessado pelo
-        celular o site quebra. Nesse caso será necessario aplicar ajustes no tamanho de tela com 
-        @media() 
         
-        USAMOS o !important para forçar a estilização em uma tag pode ter id e varias classes
-        o html e o css precisam saber qual estilo aplicar, forçamos isso usando no final do atribuido*/
         @media(max-width: 750px){
             button{
                 width: 50px!important;
