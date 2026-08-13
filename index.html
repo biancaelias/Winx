@@ -1,0 +1,173 @@
+<!-- EXPLICAÇÃO CABEÇALHO -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btnav {
+            border-radius: 10%;
+            margin-right: 10px;
+            height: 30px;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        .btnav:hover {
+            background-color: rgb(221, 192, 255);
+            color: aliceblue;
+        }
+
+        .btfooter {
+            margin-left: 10px;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(239, 227, 250);
+            color: black;
+            border: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .btfooter:hover {
+            background-color: rgb(221, 192, 255);
+            color: rgb(255, 255, 255);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card {
+            border: 1px rgb(197, 227, 255) solid;
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* o @media serve para alterar as propriedades das tags com base no tamanho do dispositivo
+        para garantir a responsividade do site, temos que verificar como fic a estilização em varios
+        tamanhos de telas diferntes, pode ser no  computador fique ok, porem quando acessado pelo
+        celular o site quebra. Nesse caso será necessario aplicar ajustes no tamanho de tela com 
+        @media() 
+        
+        USAMOS o !important para forçar a estilização em uma tag pode ter id e varias classes
+        o html e o css precisam saber qual estilo aplicar, forçamos isso usando no final do atribuido*/
+        @media(max-width: 750px){
+            button{
+                width: 50px!important;
+                height: 30px!important;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Semantica: É a parte linguistica que estuda o significado e sentidos das palavras!
+     A partir da versão 5 do html, surgiram as tags semanticas que descrevem o significado
+     das parte do seu site para o navegador e outros desenvolvedores enrtenderam!-->
+
+
+    <header
+        style="background-color: rgb(255, 172, 255); height: 10vh; display: flex; align-items: center; justify-content: center;">
+        <!-- Cabeçalho da página -->
+
+        <nav style="display: flex;align-items: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/4/4f/Winx_Club_Logo.png" alt=""
+             height="80px" width="px">
+            <a href=""><button class="btnav">Pagina inicial</button></a>
+            <a href=""><button class="btnav">Sobre Nós</button></a>
+            <a href=""><button class="btnav">Trabalhe conosco</button> </a>
+        </nav>
+
+    </header>
+
+    <main style="background-color: rgb(255, 172, 255); height: 70vh;">
+        <!-- Conteudo principal, é onde iram as informações do site em si-->
+
+        <section style="background-color: rgb(197, 227, 255); height: 40%;
+display: flex; justify-content: center; align-items: center; flex-direction: column;"> <!-- Section, é uma sessão da pagina aonde voce pode colocar um 
+                conteúdo
+                Voce pode separar seu site em varias sessões! -->
+            <h1 style="color: white;">  <Wbr>WINX - Bloom, Stella, Flora, Musa, Tecna e Aisha </Wbr></h1>
+            <br>
+            <p style="color: white;"> As Fadas Winx são personagens da animação italiana Winx Club.
+                A história acompanha Bloom e suas amigas,
+                 que estudam na escola de magia Alfea e vivem diversas aventuras. 
+                 Cada fada possui poderes e uma personalidade diferente, 
+                 mostrando a importância da amizade, da coragem e do trabalho em equipe.
+                  A série conquistou muitos fãs ao redor do mundo e se tornou um grande 
+                  sucesso entre o público jovem.
+            </p>
+
+        </section>
+
+
+        <section style="background-color: rgb(22, 87, 148); height: 60%; display: flex;">
+
+            <div style="width: 50%; height: 100%; background-color: rgb(174, 210, 245); ">
+
+                <div class="card">
+                    <h4> WINX</h4>
+                    <img src="https://i.scdn.co/image/ab67616d00001e02ada70b64e74ad0121c884524"
+                        alt="" height="90%" width="50%">
+                    <p> fADAS DE ALFEA </p>
+                </div>
+
+            </div>
+
+            <div style="width: 50%; height: 100%; background-color: rgb(174, 210, 245);;">
+                <div class="card" style="border: 1px solid  rgb(174, 210, 245);;">
+                    <h4> ESCOLA PARA FADAS </h4>
+                    <img src="https://madcave-storage.s3.amazonaws.com/wp-content/uploads/sites/3/2025/06/25205339/Winx-Club-Icon-Series.jpg"
+                        alt="" height="70%" width="40%">
+                    <p>  </p>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer
+        style="background-color: rgb(255, 172, 255); height: 20vh; display: flex; align-items: center; justify-content: center;">
+        <!-- Footer, é o rodapé da página -->
+        <nav style="display: flex; justify-content: center; align-items: center;">
+            <a href=""> <button class="btfooter">
+                    <img src="https://img.icons8.com/?size=48&id=32323&format=png" alt="">Instagram
+                </button></a>
+
+            <a href=""> <button class="btfooter">
+                    <img src="https://img.icons8.com/?size=48&id=118640&format=png" alt=""> TikTok
+                </button></a>
+
+            <a href=""> <button class="btfooter">
+                    <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png" alt="">X
+                </button></a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
